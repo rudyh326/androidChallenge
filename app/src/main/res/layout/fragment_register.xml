@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".RegisterFragment">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="32sp"
+            android:textStyle="italic|bold"
+            app:layout_constraintBottom_toTopOf="@+id/username_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/username_requirements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username_requirements"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/username_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/edittext_border"
+            android:hint="@string/username"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="@string/register"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_register" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/not_yet_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_registered_log_in"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_register"
+            app:layout_constraintVertical_bias="0.3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

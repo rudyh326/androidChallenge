@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TedMobChallenge</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="price">Price</string>
+    <string name="category">Category</string>
+    <string name="username">Username</string>
+    <string name="log_in">Log In</string>
+    <string name="not_yet_registered"><u>Not yet registered? Sign Up</u></string>
+    <string name="register">Sign Up</string>
+    <string name="already_registered_log_in"><u>Already registered? Log In</u></string>
+    <string name="username_requirements">Username must only contain letters and numbers and must start with a letter.</string>
+    <string name="user">User</string>
+    <string name="google_maps_key">AIzaSyBbCiUgrrX1HPBEVV3xPNeiAUw-3p2baB4</string>
+    <string name="map">Map</string>
+    <string name="show_details">Show Details</string>
+</resources>
